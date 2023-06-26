@@ -1,6 +1,6 @@
 html,
 body {
-  margin: 0;
+  margin: 10px 0 0 0;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -13,7 +13,7 @@ h2 {
 
 h1,
 h2 {
-  color: wheat;
+  color: #eff34a;
   margin: 0;
 }
 
@@ -32,8 +32,13 @@ h3 {
 
 /* layout */
 
+.general-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
 header {
-  background-color: dimgrey;
+  background-color: #277bdf;
 }
 header img {
   width: 60px;
@@ -43,17 +48,28 @@ header img {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 0 auto;
-  width: 370px;
   gap: 15px;
-  padding: 10px 0;
+  padding: 10px 0 10px 10px;
+}
+
+main {
+  background-image: url("https://images.unsplash.com/photo-1516222338250-863216ce01ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGh1bmRlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 1px;
+  padding-bottom: 20px;
 }
 
 .controls-container {
+  background-color: rgb(245, 245, 245, 0.7);
   display: flex;
   flex-direction: column;
   width: 200px;
-  margin: 0px auto;
+  margin: 0 auto;
+  padding: 10px 10px 0;
 }
 
 /* controls */
@@ -107,8 +123,8 @@ input[type="radio"] {
 }
 
 .get-image-btn {
-  background-color: dimgray;
-  color: wheat;
+  background-color: #277bdf;
+  color: #eff34a;
   padding: 15px 19px;
   font-size: 24px;
   border: none;
@@ -130,7 +146,7 @@ input[type="radio"] {
   border: 1px solid #67595e;
   border-radius: 5px;
   width: 420px;
-  height: 490px;
+  height: 500px;
   background-color: #fff0ee;
 }
 
