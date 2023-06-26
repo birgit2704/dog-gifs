@@ -28,6 +28,7 @@ h2 {
 h3 {
   text-align: center;
   margin: 25px;
+  color: #435263;
 }
 
 /* layout */
@@ -60,7 +61,7 @@ main {
   margin: 0 auto;
   max-width: 600px;
   padding: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 .controls-container {
@@ -97,9 +98,9 @@ label {
 
 .highlight {
   background-color: #fff0ee;
-  color: #bd301d;
+  color: rgb(245, 105, 224);
   font-weight: bold;
-  accent-color: #bd301d;
+  accent-color: rgb(245, 105, 224);
 }
 
 .radio:last-child {
