@@ -34,7 +34,7 @@ function choseGif() {
   const selectedChoiceArray = getSelectedElementsArr();
   let gifToRender;
 
-  if (selectedChoiceArray < 1) {
+  if (selectedChoiceArray.length < 1) {
     modal.style.display = "flex";
     return (modalInner.textContent = "Sorry, no such gif available");
   } else if (selectedChoiceArray.length === 1) {
