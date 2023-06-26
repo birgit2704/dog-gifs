@@ -123,13 +123,16 @@ input[type="radio"] {
 }
 
 .get-image-btn {
-  background-color: #277bdf;
+  background-color: rgb(39, 123, 223);
   color: #eff34a;
   padding: 15px 19px;
   font-size: 24px;
   border: none;
   border-radius: 5px;
   margin-bottom: 8px;
+}
+.get-image-btn:hover {
+  background-color: rgb(39, 123, 223, 0.7);
 }
 
 /* modal */
