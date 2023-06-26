@@ -1,6 +1,6 @@
 export const dogsData = [
   {
-    emotionTags: ["hungry", "cyberspace"],
+    emotionTags: ["hungry"],
     isChippy: false,
     image:
       "https://media1.giphy.com/media/ffXuoiLiu1fquv10LH/200w.webp?cid=ecf05e477hgnnj47879efygqlad7gu80i6k4h5ebc89h1u2k&ep=v1_gifs_search&rid=200w.webp&ct=g",
@@ -14,7 +14,7 @@ export const dogsData = [
     alt: "Dog drives kid's toy",
   },
   {
-    emotionTags: ["funny", "idiotic"],
+    emotionTags: ["funny", "happy"],
     isChippy: false,
     image:
       "https://media2.giphy.com/media/LROWOJz8wN7OjeMCxG/200w.webp?cid=ecf05e47nxwkt7z8x4xxmyhm4adke2vbuu7ntjprbu7xw0o6&ep=v1_gifs_search&rid=200w.webp&ct=g",
@@ -37,8 +37,9 @@ export const dogsData = [
   {
     emotionTags: ["happy", "relaxed"],
     isChippy: false,
-    image: "happy.jpeg",
-    alt: "A cat looking happy",
+    image:
+      "https://media2.giphy.com/media/pHZdGyFNp5sUXq4jp5/giphy.webp?cid=ecf05e473ni3xz9zx2rt5fn2js2dkfrwp6cbf7n9fbvyqyvr&ep=v1_gifs_search&rid=giphy.webp&ct=g",
+    alt: "A dog looking happy",
   },
   {
     emotionTags: ["happy"],
@@ -177,7 +178,8 @@ export const dogsData = [
   {
     emotionTags: ["romantic"],
     isChippy: true,
-    image: "https://giphy.com/gifs/love-i-you-ily-aDjUaokI1rPxlwLdZZ",
+    image:
+      "https://media4.giphy.com/media/xqeatbgD4Aq5k5aEW4/200.webp?cid=ecf05e473ylny16q6z7fu8vs95jgtindwioszrygdaez2n9n&ep=v1_gifs_search&rid=200.webp&ct=g",
     alt: "Chippy says I love you",
   },
 ];
