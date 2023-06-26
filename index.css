@@ -142,16 +142,16 @@ input[type="radio"] {
   display: none; /*flex when displayed*/
   position: fixed;
   margin: auto;
-  top: 80px;
+  top: 120px;
   left: 0;
   right: 0;
   align-items: center;
   justify-content: center;
   border: 1px solid #67595e;
   border-radius: 5px;
-  width: 420px;
-  height: 500px;
-  background-color: #fff0ee;
+  width: 400px;
+  height: 450px;
+  background-color: rgb(253, 231, 250);
 }
 
 .dog-img {
