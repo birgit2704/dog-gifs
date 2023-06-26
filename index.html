@@ -19,38 +19,51 @@
 
   <body>
     <div class="general-container">
-    <header>
-      <div class="header-inner">
-        <img
-        src="https://media1.giphy.com/media/ocBDPwDvA27Gp1Hl7i/200w.webp?cid=ecf05e47nk44luaqha12gsq1jqcr398rgmbowumtll2ycbkx&ep=v1_gifs_search&rid=200w.webp&ct=g"
-        class="pumpkin-img">
-        <div>
-          <h1>Chippy</h1>
-          <h2>and his friends</h2>
+      <header>
+        <div class="header-inner">
+          <img
+            src="https://media1.giphy.com/media/ocBDPwDvA27Gp1Hl7i/200w.webp?cid=ecf05e47nk44luaqha12gsq1jqcr398rgmbowumtll2ycbkx&ep=v1_gifs_search&rid=200w.webp&ct=g"
+            class="chippy-img"
+            alt="Chippy waving"
+          />
+          <div>
+            <h1>Chippy</h1>
+            <h2>and his friends</h2>
+          </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <h3>Select Your Current Emotion</h3>
-      <div class="controls-container">
-        <div class="emotion-radios" id="emotion-radios"></div>
-        <div class="gifs-check">
-          <label for="gifs-only-option" class="gifs-check-label"
-            >Chippy GIFs only</label
-          >
-          <input type="checkbox" id="gifs-only-option" />
+      </header>
+      <main>
+        <h3>Select Your Current Emotion</h3>
+        <div class="controls-container">
+          <div class="emotion-radios" id="emotion-radios"></div>
+          <div class="gifs-check">
+            <label for="gifs-only-option" class="gifs-check-label"
+              >Chippy GIFs only</label
+            >
+            <input type="checkbox" id="gifs-only-option" />
+          </div>
+          <button class="get-image-btn" id="get-image-btn">Get Image</button>
         </div>
-        <button class="get-image-btn" id="get-image-btn">Get Image</button>
+      </main>
+      <footer>
+        <p>
+          All gifs from
+          <a href="https://giphy.com/" target="_blank">GIPHY.com</a>
+        </p>
+        <a
+          class="repo"
+          href="https://github.com/birgit2704/dog-gifs"
+          target="_blank"
+          >github repo</a
+        >
+      </footer>
+      <div class="meme-modal" id="meme-modal">
+        <button class="meme-modal-close-btn" id="meme-modal-close-btn">
+          X
+        </button>
+        <div id="meme-modal-inner"></div>
       </div>
-    </main>
-    <footer>
-      <p>All gifs from <a href="https://giphy.com/" target="_blank">GIPHY.com</a></p><a class="repo" href="https://github.com/birgit2704/dog-gifs" target="_blank">github repo</a>
-    </footer>
-    <div class="meme-modal" id="meme-modal">
-      <button class="meme-modal-close-btn" id="meme-modal-close-btn">X</button>
-      <div id="meme-modal-inner"></div>
+      <script src="index.js" type="module"></script>
     </div>
-    <script src="index.js" type="module"></script>
   </body>
-</div>
 </html>
