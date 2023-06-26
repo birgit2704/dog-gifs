@@ -25,16 +25,17 @@ function highlightSelectedEmotion(e) {
 
 function renderImage() {
   const gifToRender = choseGif();
-
-  modalInner.innerHTML = `<img class="dog-img" src="${gifToRender.image}" />`;
-  modal.style.display = "flex";
+  if (selectedChoiceArray.length > 0) {
+    modalInner.innerHTML = `<img class="dog-img" src="${gifToRender.image}" />`;
+    modal.style.display = "flex";
+  }
 }
 
 function choseGif() {
   const selectedChoiceArray = getSelectedElementsArr();
   let gifToRender;
 
-  if (selectedChoiceArray.length < 1) {
+  if (selectedChoiceArray.length === 0) {
     modal.style.display = "flex";
     return (modalInner.textContent = "Sorry, no such gif available");
   } else if (selectedChoiceArray.length === 1) {
