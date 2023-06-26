@@ -24,6 +24,29 @@ function highlightSelectedEmotion(e) {
 }
 
 function renderImage() {
+  const gifToRender = choseGif();
+
+  modalInner.innerHTML = `<img class="dog-img" src="${gifToRender.image}" />`;
+  modal.style.display = "flex";
+}
+
+function choseGif() {
+  const selectedChoiceArray = getSelectedElementsArr();
+  let gifToRender;
+
+  if (selectedChoiceArray < 1) {
+    modal.style.display = "flex";
+    return (modalInner.textContent = "Sorry, no such gif available");
+  } else if (selectedChoiceArray.length === 1) {
+    gifToRender = selectedChoiceArray[0];
+  } else {
+    let randomNo = Math.floor(Math.random() * selectedChoiceArray.length);
+    gifToRender = selectedChoiceArray[randomNo];
+  }
+  return gifToRender;
+}
+
+function getSelectedElementsArr() {
   const selectedEl = document.querySelector(
     'input[type="radio"]:checked'
   ).value;
@@ -35,24 +58,7 @@ function renderImage() {
       return dog.emotionTags.includes(selectedEl);
     }
   });
-  // get selected element Array
-
-  let gifToRender;
-  if (selectedChoiceArray < 1) {
-    modal.style.display = "flex";
-    return (modalInner.textContent = "Sorry, no such gif available");
-  } else if (selectedChoiceArray.length === 1) {
-    gifToRender = selectedChoiceArray[0];
-  } else {
-    let randomNo = Math.floor(Math.random() * selectedChoiceArray.length);
-    gifToRender = selectedChoiceArray[randomNo];
-  }
-  // get picture for selected Element
-
-  modalInner.innerHTML = `<img class="dog-img" src="${gifToRender.image}" />`;
-  modal.style.display = "flex";
-  // put picture into the modal
-  // render modal on page
+  return selectedChoiceArray;
 }
 
 function getEmotions() {
